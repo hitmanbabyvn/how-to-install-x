@@ -1,4 +1,4 @@
-### Install using the repository
+### Install docker using the repository
 1. Uninstall old version
 2. Install required packages
 3. Setup the stable repository
@@ -23,4 +23,9 @@ sudo yum-config-manager \
 sudo yum install -y docker-ce docker-ce-cli containerd.io
 sudo systemctl start docker
 sudo systemctl enable docker
+```
+### Install docker-compose
+```
+sudo curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 ```
